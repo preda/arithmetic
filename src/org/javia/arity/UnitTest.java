@@ -188,6 +188,8 @@ class TestEval {
         new EvalCase("imag(8.123)", 0),
         new EvalCase("im(sqrt(-1))", 1),
         new EvalCase("im(nan)", Double.NaN),
+
+        new EvalCase("56.3 - 55.7", .6),
     };
 
     private static final double ONE_SQRT2 = 0.7071067811865475; // sin(pi/4)
